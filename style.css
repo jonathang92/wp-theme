@@ -1,0 +1,379 @@
+/*
+Theme Name: Dev-theme
+Theme URI: jonathan.com.ve
+Description: Tema oscuro desarrollado con bootstrap.
+Version: 1
+Author: Jonathan González
+Author URL: jonathan.com.ve
+*/
+/*--------------Estilo para los posts--------------*/
+
+.center{text-align: center;}
+img.center, img[align="center"] {display: block; margin-left: auto; margin-right: auto;}
+.alignleft{float: left;}
+img.alignleft, img[align="left"] {float: left; margin: 2px 10px 5px 0px;}
+.alignright{float: right;}
+img.alignright, img[align="right"] {float: right; margin: 2px 0px 5px 10px;}
+.clear{clear: both;}
+hr.clear {clear: both; visibility: hidden; margin: 0px; padding: 0px; height: 0px;}
+
+/*----------------Estilos Generales----------------*/
+*{
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  background-color: #191919;
+  font-size: 12pt;
+  /*font-family: 'Nunito', sans-serif;*/
+  /*font-family: 'Raleway', sans-serif;*/
+  font-family: 'Exo', sans-serif;
+}
+a{
+  color: #BF2222;
+  transition: color 0.5s;
+}
+a:hover{
+  text-decoration:none;
+  color: #681111;
+}
+.principal{
+  max-width: 1280px;
+  /*margin: 0px auto;*/
+}
+.site-title a{
+  color: #fff;
+}
+.site-title a:hover{
+  color: #fff;
+}
+/*---------------------Header---------------------*/
+.navbar{
+  background-color: transparent;
+  border: none;
+}
+.navbar .navbar-nav > li > a {
+  color: #FFF;
+  transition: color 0.5s;
+}
+.navbar .navbar-nav > li > a:hover{
+  text-decoration:none;
+  color: #BF2222;
+}
+header{
+  margin: 20px 0px;
+  overflow: hidden;
+  /*width: 85%;*/
+}
+
+header .title{
+  text-align: left;
+}
+header #logo p {
+    font-size: 4rem;
+    font-weight: 100;
+    color: #ffffff;
+}
+header #logo span {
+    color: #ffffff;
+    /*margin-left: 60%;*/
+    font-weight: 400;
+}
+header nav ul{
+  /*float: right;*/
+  margin-top: 20px;
+}
+header nav ul li{
+  display: inline-block;
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+header nav ul li a{
+  /*font-weight: 300;*/
+  font-size: 1.8rem;
+  color: #fff;
+  transition: color 0.5s;
+}
+header nav ul li a:hover{
+  color: #BF2222;
+}
+/*----------------------main----------------------*/
+#main{
+  margin-bottom: 20px;
+}
+#slideshow .extract{
+  color: #fff;
+  text-align: justify;
+}
+#slideshow .date{
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #B2B2B2;
+}
+#slideshow .date ul{
+  list-style: none;
+  display: inline-block;
+}
+#main #slideshow .slidesjs-pagination li{
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  display: inline-block;
+  margin-right: 10px;
+}
+#main #slideshow .slidesjs-pagination .active{
+  background-color: #333333;
+}
+#main #slideshow .slidesjs-pagination li a{
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  display: block;
+  font-size: 0px;
+}
+.slidesjs-pagination{
+  padding: 0px;
+  margin-bottom: 20px;
+}
+#main #articles_list article {
+    margin-bottom: 40px;
+    /*!  */
+    padding-bottom: 25px;
+    border-bottom: 1px solid #333333;
+    overflow: hidden;
+}
+#main #articles_list .no-articulos {
+      text-align: center;
+      margin: 60px 0px;
+      color: #fff;
+  }
+
+#main #articles_list article .extract{
+  color: #fff;
+  text-align: justify;
+}
+/*#main #articles_list article img {
+  padding-right: 20px;
+  padding-bottom: 20px;
+}*/
+#main #articles_list article .date{
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #B2B2B2;
+}
+#main #articles_list article .date ul{
+  list-style: none;
+  display: inline-block;
+}
+#main #articles_list article h2{
+  margin-top: 10px;
+  color:#AF2222;
+}
+#main #articles_list #pagination {
+    margin-bottom: 40px;
+    width: 100%;
+}
+#main #articles_list #pagination p {
+    text-align: center;
+}
+#main #articles_list #pagination p a {
+    margin: 0px 20px;
+    font-size: 2.5rem;
+    font-weight: 300;
+    display: inline-block;
+}
+.widget h3 {
+    font-size: 2.4rem;
+    font-family: "Raleway", "open sans", arial, helvetica,sans-serif;
+    font-weight: 400;
+    color: #333333;
+    margin-bottom: 10px;
+}
+.widget ul li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+.widget ul li a {
+    font-size: 1.5rem;
+    color: #777777;
+}
+/*----------------------footer----------------------*/
+footer #copyright {
+    width: 100%;
+    clear: both;
+    text-align: center;
+    padding: 10px;
+    color: #B2B2B2;
+    font-size: 1.2rem;
+    background-color: #141414;
+}
+@media screen and (max-width:1024px){
+  #main #no-slide {
+    display:none;
+  }
+}
+/*Medida para Tablets*/
+@media screen and (max-width:768px){
+  header #logo .title {
+      padding: 9px;
+      text-align: center;
+      background-color: rgba(72, 71, 70, 0.39);
+      margin-bottom: 10%;
+      /*margin-left: 15px;*/
+  }
+  header nav ul {
+    /*margin-left: 15px;*/
+  }
+  header #logo span {
+      margin-left: 27%;
+  }
+  header nav ul {
+    text-align: justify;
+  }
+    header nav ul li {
+      margin: 0px 15px 36px 0px;
+  }
+    header nav ul li a {
+      background-color: #bf2220;
+      padding: 10px;
+      transition: color 0.5s;
+  }
+    header nav ul li a:hover{
+      color: white;
+      background-color: black;
+      transition: all 0.5s;
+  }
+  #main #no-slide {
+		display:none;
+	}
+}
+/*Medida para Smartphones*/
+@media screen and (max-width:400px){
+  header nav ul {
+      text-align: left;
+  }
+}
+/*--------------------------------------------------*/
+/*----------------------Categorias------------------*/
+/*--------------------------------------------------*/
+#main #articles_list #cat_name{
+  font-size: 2 rem;
+  color: #777777;
+  font-weight: 500;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #777777;
+  color: #fff;
+}
+#main #articles_list #cat_name ul{
+  list-style: none;
+}
+#main #articles_list #cat_name a{
+  color: #fff;
+}
+#main #articles_list #cat_name a:hover{
+  color: #777777;
+}
+/*--------------------------------------------------*/
+/*----------------------Comentarios-----------------*/
+/*--------------------------------------------------*/
+#comentarios h3{
+  color: #777777;
+  margin-bottom: 40px;
+}
+#caja_comentarios {
+    color: #fff;
+}
+#caja_comentarios input[type=text],textarea {
+  border-radius: 0px;
+  background-color: #191919;
+  color: #FFF;
+  border: 2px solid #777774;
+  width: 100%;
+
+  display: block;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  background-image: none;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+
+}
+#caja_comentarios textarea {
+  height: auto;
+}
+#caja_comentarios input[type=text]:focus,textarea:focus {
+    border-color: #B1B1B1;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgb(119, 119, 119);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgb(119, 119, 119);
+}
+#caja_comentarios input[type=submit]{
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    background-color: #bf2220;
+    border-radius: 0px;
+    border: none;
+    color:#fff;
+    transition: background-color 0.5s;
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+}
+#caja_comentarios input[type=submit]:hover{
+  color:#fff;
+  background-color: #681111;
+}
+#caja_comentarios .form-submit{
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+#caja_comentarios .comment-body {
+    background-color: #1F1F1F;
+    padding: 10px;
+    border: 2px solid #5d5d5d;
+    margin-top: 20px;
+}
+#caja_comentarios .children{
+  margin-left: 15px;
+  list-style: none;
+}
+/*--------------------------------------------------*/
+/*----------------------Boton-----------------------*/
+/*--------------------------------------------------*/
+.boton{
+  background-color: #bf2220;
+  border-radius: 0px;
+  border: none;
+  color:#fff;
+  transition: background-color 0.5s;
+}
+.boton:hover{
+  color:#fff;
+  background-color: #681111;
+}
+/*--------------------------------------------------*/
+/*----------------------Imagen----------------------*/
+/*--------------------------------------------------*/
+.img-rounded img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
